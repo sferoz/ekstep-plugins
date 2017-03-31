@@ -1,0 +1,58 @@
+{
+    "identifier": "haircut_story_1",
+    "title": "Haircut Story Assessment",
+    "total_items": 5,
+    "shuffle": false,
+    "showImmediateFeedback": true,
+    "max_score": 4,
+    "subject": "LIT",
+    "item_sets": [{
+        "id": "set_1",
+        "count": 5
+    }],
+    "items": {
+        "set_1": [
+            {
+            "identifier": "q1",
+            "type": "mcq",
+            "template": "mcq_template_default",
+            "qlevel": "MEDIUM",
+            "title": "Select the correct option",
+            "question": "Who went to the moon?",
+            "options": [{
+                "value": { "type": "mixed", "text": "Niel Armstrong"},
+                "answer": true
+            }, {
+                "value": { "type": "mixed", "text": "Kalpana Chawla"}
+            }, {
+                "value": { "type": "mixed", "text": "Edmund Hillary"}
+            }, {
+                "value": { "type": "mixed", "text": "Roald Amundsen"}
+            }],
+            "max_score": 4,
+            "partial_scoring": true,
+            "feedback": ""
+        }, {
+            "identifier": "q2",
+            "type": "mcq",
+            "template": "mcq_template_default",
+            "qlevel": "MEDIUM",
+            "title": "Select the correct option",
+            "question": "Who went to the south pole?",
+            "options": [{
+                "value": { "type": "mixed", "text": "Niel Armstrong"}
+            }, {
+                "value": { "type": "mixed", "text": "Kalpana Chawla"}
+            }, {
+                "value": { "type": "mixed", "text": "Edmund Hillary"}
+            }, {
+                "value": { "type": "mixed", "text": "Roald Amundsen"},
+                "answer": true
+            }],
+            "max_score": 4,
+            "partial_scoring": true,
+            "feedback": ""
+        }
+        ]
+    }
+}

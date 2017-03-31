@@ -1,0 +1,54 @@
+<theme startStage="scene1" id="theme" ver="0.2">
+	<manifest>
+        <media id="carpenter_img" src="carpenter.png" type="image"/>
+		<media id="rocket" src="rocket.png" type="image"/>
+        <media id="ball" src="ball.png" type="image"/>
+        <media id="nextimg" src="icon_next.png" type="image"/>
+        <media id="previmg" src="icon_previous.png" type="image"/>
+        <media id="animate" src="AnimatePlugin.js" type="plugin"/>
+        <media id="bounce" src="BouncePlugin.js" type="plugin"/>
+        <media id="quiz" src="QuizPlugin.js" type="plugin"/>
+        <media id="line" src="LinePlugin.js" type="plugin"/>
+        <media id="rotate" src="RotatePlugin.js" type="plugin"/>
+        <!-- <media id="navigate" src="SuperNavPlugin.js" type="plugin"/> -->
+	</manifest>
+
+	<stage id="preloadStage" preload="true">
+		<image asset="previous"/>
+		<image asset="next"/>
+        <image asset="rocket"/>
+        <image asset="ball"/>
+		<image asset="barber_img"/>
+        <image asset="carpenter_img"/>
+        <audio asset="cheers_soft" />
+        <audio asset="chimes" />
+
+	</stage>
+
+	<stage id="baseStage" preload="true">
+	</stage>
+
+	<stage id="scene1" x="0" y="0" w="100" h="100">
+		<param name="next" value="scene2" />
+
+        <param name="next" value="scene1" />
+        <param name="previous" value="scene3" />
+
+        <text x="10" y="10" w="80" h="40" font="Arial" fontsize="100" align="center">Animations</text>
+
+        <animate id="a1" x="10" y="10" w="4" h="80" asset="rocket" direction="down" speed="1"/>
+        <bounce id="a2" x="10" y="10" w="50" h="80" asset="ball" speed="1"/>
+        <rotate id="a3" x="70" y="50" w="9" h="16" asset="ball" speed="1"/>
+
+ 	</stage>
+
+    <stage id="scene2" x="0" y="0" w="100" h="100">
+        <param name="next" value="scene1" />
+
+        <line x="20" y="20" w="60" h="0" stroke="#ff0000" stroke-width="1" />
+        <line x="20" y="30" w="60" h="0" stroke="#000000" stroke-width="10" stroke-dash="dotted"/>
+        <line x="20" y="40" w="60" h="0" stroke="#000000" stroke-width="1" stroke-dash="dashed"/>
+        <line x="20" y="50" w="60" h="0" stroke="#000000" stroke-width="10" stroke-dash="solid"/>
+        <line x="20" y="60" w="60" h="0" stroke="#000000" stroke-width="3" stroke-dash="dotted"/>
+    </stage>
+</theme>

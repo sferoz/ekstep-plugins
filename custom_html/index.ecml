@@ -1,0 +1,39 @@
+<theme startStage="intro" id="theme" ver="0.2">
+    <manifest>
+        <media id="background" src="background2.jpg" type="image" />
+        <media id="icon" src="icon.png" type="image" />
+        <media id="play" src="icon_play.png" type="image" />
+        <media id="ekstep" src="eksteplogo.png" type="image" />
+
+        <media id="cat" src="cat_running.gif" type="image" />
+        <media id="wolf" src="wolf_walking.gif" type="image" />
+        <media id="catwalk" src="cat_walking.gif" type="image" />
+
+        <media id="hello" src="HelloTemplate.js" type="plugin" />
+        <media id="gif" src="GifPlugin.js" type="plugin" />
+
+    </manifest>
+
+    <stage id="preloadStage" preload="true">
+        <image asset="play"/>
+        <image asset="ekstep"/>
+        <image asset="icon"/>
+        <image asset="background"/>
+    </stage>
+
+    <stage id="intro" x="0" y="0" w="100" h="100">
+        <param name="next" value="endstage" />
+
+        <hello x="20" y="20" w="80" h="10">World</hello>
+
+        <gif id="catwalk" x="20" y="20" w="80" h="50" asset="catwalk"/>
+        <gif id="cat" x="40" y="10" w="30" h="30" asset="cat"/>
+
+        <text x="10" y="62" w="80" h="10" align="center" font="Georgia" fontsize="50" color="white" shadow="gray">Custom animated Gifs rendered on HTML layer !!!</text>
+    </stage>
+
+    <stage id="endstage" x="0" y="0" w="100" h="100">
+        <text x="10" y="62" w="80" h="10" align="center" font="Georgia" fontsize="50" color="white" shadow="gray">Thank You !!!</text>
+    </stage>
+
+</theme>

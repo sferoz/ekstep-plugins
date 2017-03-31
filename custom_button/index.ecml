@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme ver="0.2" id="theme" startStage="splash">
+  <manifest>
+      <media id="previous" src="icon_previous.png" type="image" />
+      <media id="next" src="icon_next.png" type="image" />
+      <media id="circle" src="circleButtonPlugin.js" type="plugin"/>
+  </manifest>
+  <stage id="baseStage" preload="true">
+  	<image asset="previous"/>
+  	<image asset="next"/>
+  </stage>
+  <stage id="splash" x="0" y="0" w="100" h="100">
+  	<text x="10" y="10" w="80" h="10" fontsize="4vw">Click the circle to change it's color</text>
+  	<circle id="cicle1" x="90" y="80" w="5" h="5" fill="red">
+  		<event type="click">
+  			<action type="command" command="custom" asset="cicle1" invoke="changeColor" color="green"/>
+  		</event>
+  	</circle>
+  </stage>
+ </theme>
